@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageOutputPath>$(OutDir)</PackageOutputPath>
     <Title>nuget.org</Title>
-    <Authors>Braspin.$(AssemblyName)</Authors>
+    <Authors>$(AssemblyName)</Authors>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
     <RepositoryType>git</RepositoryType>
@@ -15,6 +15,7 @@
     <PackageProjectUrl>https://github.com/braspin/IdentityServer7.EntityFramework.Storage</PackageProjectUrl>
     <RepositoryUrl>https://github.com/braspin/IdentityServer7.EntityFramework.Storage</RepositoryUrl>
     <Product>Braspin.$(AssemblyName)</Product>
+    <PackageId>Braspin.$(AssemblyName)</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
