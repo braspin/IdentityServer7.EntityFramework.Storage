@@ -14,6 +14,7 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/braspin/IdentityServer7.EntityFramework.Storage</PackageProjectUrl>
     <RepositoryUrl>https://github.com/braspin/IdentityServer7.EntityFramework.Storage</RepositoryUrl>
+    <Product>Braspin.$(AssemblyName)</Product>
   </PropertyGroup>
 
   <ItemGroup>
