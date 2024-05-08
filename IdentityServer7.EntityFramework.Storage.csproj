@@ -4,18 +4,30 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageOutputPath>$(SolutionDir)$(Configuration)</PackageOutputPath>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageOutputPath>$(OutDir)</PackageOutputPath>
+    <Title>nuget.org</Title>
+    <Authors>Braspin.$(AssemblyName)</Authors>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/braspin/IdentityServer7.EntityFramework.Storage</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/braspin/IdentityServer7.EntityFramework.Storage</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="13.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.18" />
+    <None Include="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IdentityServer7.Storage\IdentityServer7.Storage.csproj" />
-    <ProjectReference Include="..\IdentityServer7\IdentityServer7.csproj" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Braspin.IdentityServer7" Version="0.1.0" />
+    <PackageReference Include="Braspin.IdentityServer7.Storage" Version="0.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.18" />
   </ItemGroup>
 
 </Project>
